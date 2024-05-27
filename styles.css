@@ -7,7 +7,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background: url('images/photo_5954259612695904133_y.jpg') no-repeat center center fixed, 
-                url('photo_5954259612695904134_y.jpg') no-repeat center center fixed;
+                url('images/photo_5954259612695904134_y.jpg') no-repeat center center fixed;
     background-size: cover, cover;
     color: white;
     overflow: hidden;
