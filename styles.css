@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.fireworks {
+    position: relative;
+    text-align: center;
+}
+
+.fireworks h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+}
+
+.fireworks h2 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    right: -5rem;
+}
+
+.firework {
+    position: absolute;
+    width: 5px; /* Havai fişeklerin boyutunu artırın */
+    height: 5px; /* Havai fişeklerin boyutunu artırın */
+    background: yellow; /* Havai fişeklerin rengini sarı yapın */
+    animation: explode 1.5s ease-out forwards; /* Patlama animasyonunu daha uzun yapın */
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(10); /* Patlama boyutunu artırın */
+        opacity: 0;
+    }
+}
