@@ -6,7 +6,9 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: url('images/photo_5954259612695904133_y.jpg') no-repeat center center fixed, 
+                url('photo_5954259612695904134_y.jpg') no-repeat center center fixed;
+    background-size: cover, cover;
     color: white;
     overflow: hidden;
 }
@@ -20,6 +22,7 @@ body, html {
     font-size: 3rem;
     margin: 0;
     position: relative;
+    z-index: 1;
 }
 
 .fireworks h2 {
@@ -27,14 +30,15 @@ body, html {
     position: absolute;
     top: 2rem;
     right: -5rem;
+    z-index: 1;
 }
 
 .firework {
     position: absolute;
-    width: 5px; /* Havai fişeklerin boyutunu artırın */
-    height: 5px; /* Havai fişeklerin boyutunu artırın */
-    background: yellow; /* Havai fişeklerin rengini sarı yapın */
-    animation: explode 1.5s ease-out forwards; /* Patlama animasyonunu daha uzun yapın */
+    width: 5px;
+    height: 5px;
+    background: yellow;
+    animation: explode 1.5s ease-out forwards;
 }
 
 @keyframes explode {
@@ -43,7 +47,7 @@ body, html {
         opacity: 1;
     }
     100% {
-        transform: scale(10); /* Patlama boyutunu artırın */
+        transform: scale(10);
         opacity: 0;
     }
 }
